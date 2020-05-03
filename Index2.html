@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Homework 4 UCLA Coding Boot Camp">
+        <meta name="author" content="Eric Zimmermann">
+
+        <title>Crystal Collector</title>
+        
+        <link rel="icon" type="image/png" href="assets/images/Avengers-Favcon.png">
+        <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+        <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Oswald:wght@500;700">
+        <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+        
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <h1> Infinity Stone Collector</h1>
+
+            <!-- Page 0: Directions -->
+            <div class="page">
+                <h2>Directions:</h2>
+                
+                <p>There are 6 Inifnity Stones, each worth a certain amount of points.</p>
+                <p>Find out the value of each crystal to help the Avengers save the day!</p>
+                <p>Be careful: If you click the wrong stones you might trigger the snap...</p>
+
+                <div class="page_next">Start</div>
+            </div>
+            
+            <!-- Page 1: Game Screen -->
+            <div class="page">
+                <div id="userStats">
+                    <p>Wins: <strong><span id="numWins"></span></strong></p>
+                    <p>Losses: <strong><span id="numLosses"></span></strong></p>
+                </div>
+
+                <p>Make a sum of <span id="targetSum"></span>!</p>
+                <p>Your sum is <strong><span id="currentSum"></span></strong>.</p>
+                
+                <div class="clearfix">
+                    <img class="crystals" src="assets/images/Soul-Stone.png" alt="Soul Stone">
+                    <img class="crystals" src="assets/images/Space-Stone.png" alt="Space Stone">
+                    <img class="crystals" src="assets/images/Time-Stone.png" alt="Time Stone">
+                    <img class="crystals" src="assets/images/Power-Stone.png" alt="Power Stone">
+                    <img class="crystals" src="assets/images/Reality-Stone.png" alt="Reality Stone">
+                    <img class="crystals" src="assets/images/Mind-Stone.png" alt="Mind Stone">
+                </div>
+
+                <div class="page_prev">Directions</div>
+            </div>
+        </div>
+
+        <!-- Lightbox -->
+        <div id="lightBox_background"></div>
+
+        <div id="lightBox" class="container">
+            <p id="outputMessage"></p>
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+        <div class="container justify-content-center">
+          <p class="text-center pt-2">
+            Published by Eric Zimmermann 2020
+          </p>
+          <audio
+            src="music/AvengersTheme/mp4"
+            controls
+            autoplay
+            loop
+          ></audio>
+        </div>
+      </footer>
+
+        <script type="text/javascript" src="assets/javascript/game.js"></script>
+    </body>
+</html>
